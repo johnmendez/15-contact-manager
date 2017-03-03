@@ -4,10 +4,12 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+$c-background: #f0f0f0;
+$c-delete: #fe0c1e;
+$c-bannermain: #24abfb;
+$c-bannerhead: #e4f4ff;
+$c-submit: #41cc76;
+
 @import 'banner';
 @import 'contact';
-
-.container {
-  max-width: 65rem;
-  margin: auto;
-}

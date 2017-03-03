@@ -4,7 +4,7 @@ export default function reducer(state, action) {
       return { contacts: action.data };
 
     case 'CONTACT@CREATE':
-      return { contacts: [action.data] };
+      return { contacts: [...state.contacts, action.data] };
 
     default:
       return state || { contacts: [] };

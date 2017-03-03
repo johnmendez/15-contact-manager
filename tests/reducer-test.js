@@ -16,12 +16,12 @@ module('reducer', () => {
   });
 
   test('Add A Full Name', (assert) => {
-    const oldState = { contacts: [] };
-    const oldStateTwo = { contacts: [{ firstName: 'Angelina', lastName: 'Joloe' }] };
+    const emptyState = { contacts: [] };
+    const oldState = { contacts: [{ firstName: 'Angelina', lastName: 'Joloe' }] };
     const actionOne = { type: 'CONTACT@CREATE', data: { firstName: 'Johnny', lastName: 'Depp' } };
     const actionTwo = { type: 'CONTACT@CREATE', data: { firstName: 'Johnny', lastName: 'Depp' } };
 
-    assert.deepEqual(reducer(oldState, actionOne), { contacts: [{ firstName: 'Johnny', lastName: 'Depp' }] });
-    assert.deepEqual(reducer(oldStateTwo, actionTwo), { contacts: [{ firstName: 'Johnny', lastName: 'Depp' }] });
+    assert.deepEqual(reducer(emptyState, actionOne), { contacts: [{ firstName: 'Johnny', lastName: 'Depp' }] });
+    assert.deepEqual(reducer(oldState, actionTwo), { contacts: [{ firstName: 'Angelina', lastName: 'Joloe' }, { firstName: 'Johnny', lastName: 'Depp' }] });
   });
 });
