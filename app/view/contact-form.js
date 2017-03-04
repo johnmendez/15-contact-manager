@@ -1,3 +1,5 @@
+import { createContact} from '../actions'
+
 export default class ContactFormView {
   constructor(el, store) {
     this.el = el;
