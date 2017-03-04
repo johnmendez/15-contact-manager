@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- 15 Contact Manager
 
@@ -28,7 +29,57 @@ Style using SASS and HTML -->
   <title>15-contact-manager</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+  <div class="app">
+    <form class="contact-form banner">
+      <h1>New Contact</h1>
+      <ul class="banner__list">
+        <li class="banner__info">First Name <input type="text" name="" value="" class="input contact-form__firstName"></li>
+        <li class="banner__info">Last Name <input type="text" name="" value="" class="input contact-form__lastName"></li>
+        <li class="banner__info">Street <input type="text" name="" value="" class="input contact-form__street"></li>
+        <li class="banner__info">City <input type="text" name="" value="" class="input contact-form__city"></li>
+        <li class="banner__info">State <input type="text" name="" value="" class="input contact-form__state"></li>
+      </ul>
+      <button class="banner__btn contact-form__submit">Submit</button>
+    </form>
+
+    <ul class="grid">
+      <li class="grid__item">
+        <div class="contact">
+          <h1 class="contant__name">Full Name</h1>
+          <p class="contant__street">123 1st Ave S</p>
+          <p class="contact__location">Nashville, Tn</p>
+          <button type="button" name="button" class="contact__btn">Delete</button>
+        </div>
+      </li>
+      <li class="grid__item">
+        <div class="contact">
+          <h1 class="contant__name">Full Name</h1>
+          <p class="contant__street">123 1st Ave S</p>
+          <p class="contact__location">Nashville, Tn</p>
+          <button type="button" name="button" class="contact__btn">Delete</button>
+        </div>
+      </li>
+      <li class="grid__item">
+        <div class="contact">
+          <h1 class="contant__name">Full Name</h1>
+          <p class="contant__street">123 1st Ave S</p>
+          <p class="contact__location">Nashville, Tn</p>
+          <button type="button" name="button" class="contact__btn">Delete</button>
+        </div>
+      </li>
+      <li class="grid__item">
+        <div class="contact">
+          <h1 class="contant__name">Full Name</h1>
+          <p class="contant__street">123 1st Ave S</p>
+          <p class="contact__location">Nashville, Tn</p>
+          <button type="button" name="button" class="contact__btn">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>
