@@ -1,3 +1,6 @@
+import { removeContact } from '../actions';
+
+
 class ItemView {
   constructor(data, store) {
     this.data = data;
@@ -14,9 +17,11 @@ class ItemView {
     </div>`;
   }
 
-  mounted() {}
-
-// Fix These
+  mounted() {
+    this.el.addEventListener('click', () => {
+      this.store.dispatch(removeContact(this.data.id));
+    });
+  }
 
   render() {
     this.el.querySelector('.contact__name').innerText = `${this.data.firstName}, ${this.data.lastName}`;

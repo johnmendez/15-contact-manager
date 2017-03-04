@@ -1,14 +1,14 @@
-export function findAll ( action ) {
+export function findAll ( [action] ) {
   return {
     type: 'CONTACT@FIND_ALL',
-    data: { action },
+    data: {action},
   };
 }
 
 export function createContact(data) {
   return {
     type: 'CONTACT@CREATE',
-    data: { data, id: new Date() }
+    data: { ...data, id: new Date() }
   };
 }
 
